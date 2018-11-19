@@ -1,9 +1,61 @@
-/* #Background_left, #Background_right {
-  background-image: url("/Users/bluec/cssi2018/Forney 185 Fall/Mans of Marvel Website/media/mainside1.png");
-} */
 
+#GameScreen {
+  height: 700px;
+  width: 950px;
+  border: 5px solid black;
+  font-family: 'VT323', monospace;
+  /* opacity: 0.25; */
+  background-image: url("https://files.slack.com/files-pri/T4K3BCZF0-FE4DAMFTL/image_from_ios.jpg");
+}
 
+#WelcomeBox{
+  border: 5px solid black;
+  width: 400px;
+  padding: 20px;
+  font-size:20px;
+  display: inline-block;
+/*   display: none; */
+  text-align: center;
+  margin: 25% 30% 25% 30%;
+  background-color: white;
+}
 
-/* #Content {
-  background-image: url("/Users/bluec/cssi2018/Forney 185 Fall/Mans of Marvel Website/media/mainside1.png");
-} */
+#rod{
+  border: 15px solid black;
+  height: 500px;
+  width: 75px;
+  margin: 100px;
+  border-radius: 10px;
+  background-color: skyblue;
+  display: none;
+/*   display: inlne-block;  */
+}
+#fishbar{
+  position: relative;
+  top: 0px;
+  border: 10px solid green;
+  height: 70px;
+  background-color: green;
+  margin: 0 auto;
+}
+#heart{
+  position: relative;
+  margin: -70px 1px 1px 13px;
+  top: 0px;
+}
+#progressBar{
+  margin: 40px 1px 1px 50px;
+  border: 5px solid black;
+  width: 800px;
+  display: none;
+  height: 30px;
+/*   display: inline-block; */
+  background-color: pink;
+/*   padding:10px 1px 1px 10px; */
+}
+#progress{
+  border: 5px solid red;
+  font-size: 20px;
+  width: 395px;
+  background-color: red;
+}
