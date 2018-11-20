@@ -101,8 +101,8 @@ document.addEventListener("keypress", function(event) {
 
 function startGame() {
   begin.style.display = "none";
-  rodBar.style.display = "inline-block";
   progressBar.style.display = "inline-block";
+  rodBar.style.display = "inline-block";
 }
 
 function endGame() {
