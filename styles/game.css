@@ -15,8 +15,60 @@
   font-size:20px;
   display: inline-block;
   text-align: center;
-  margin: 25% 30% 25% 30%;
+  margin: 10% 30% 25% 30%;
   background-color: white;
+}
+
+h2{
+   padding: 0% 10% 0% 10%;
+}
+
+#how2{
+  float: left;
+}
+
+#start{
+  float: right;
+}
+
+#how2:hover, #start:hover{
+  color: green;
+}
+
+#LoseCard{
+ border: 5px solid black;
+  width: 400px;
+  padding: 20px;
+  font-size:20px;
+/*   display: inline-block; */
+  display: none;
+  text-align: center;
+  margin: 10% 30% 10% 30%;
+  background-color: white;
+}
+
+#WinCard{
+ border: 5px solid black;
+  width: 400px;
+  padding: 20px;
+  font-size:20px;
+/*   display: inline-block; */
+  display: none;
+  text-align: center;
+  margin: 10% 30% 10% 30%;
+  background-color: white;
+}
+
+#LoseFace{
+  background-image: url(https://media2.giphy.com/media/As8vsXFOOCsJW/giphy.gif?cid=3640f6095bf3e1cc625973524958ddfb );
+  height: 250px;
+  width: 400px;
+}
+
+#WinFace{
+  background-image: url(https://i.imgur.com/pwQbr2m.png);
+  height: 250px;
+  width: 400px;
 }
 
 #rod{
@@ -46,7 +98,7 @@
 }
 
 #progressBar{
-  margin: 1%;
+  margin: 1% 1% 1% 10%;
   border: 5px solid black;
   width: 800px;
   border-radius: 10px;

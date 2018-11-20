@@ -1,6 +1,12 @@
 let begin = document.querySelector("#WelcomeBox"),
-  rodBar = document.querySelector("#rod"),
-  fishbar = document.querySelector("#fishbar"),
+    start = document.querySelector("#start"),
+    how2 = document.querySelector("#how2"),
+    prompt = document.querySelector("#GamePrompt"),
+    loseCard = document.querySelector("#LoseCard"),
+    winCard = document.querySelector("#WinCard"),
+    prize = document.querySelector("#WinFace"),
+    rodBar = document.querySelector("#rod"),
+    fishbar = document.querySelector("#fishbar"),
   heart = document.querySelector("#heart"),
   progressBar = document.querySelector("#progressBar"),
   progressMeter = document.querySelector("#progress"),
@@ -86,11 +92,18 @@ function overallProgress() {
   }, 1000);
 }
 
-begin.addEventListener("click", function() {
+start.addEventListener("click", function() {
   startGame();
   moveHeart();
   moveFishbar();
   overallProgress();
+});
+
+how2.addEventListener("click", function() {
+  prompt.innerHTML = "Keep hitting the enter key to try and keep the heart within the green bar. Fill your progress bar to win the game!";
+  how2.style.display = "none";
+  start.style.float = "none";
+  // start.style.textAlign = "center";
 });
 
 document.addEventListener("keypress", function(event) {
@@ -109,8 +122,10 @@ function endGame() {
   rodBar.style.display = "none";
   progressBar.style.display = "none";
   if (progress >= fullProgress) {
-    alert("You win!");
-  } else {
-    alert("There's plenty of fish in the sea but none are seeming to bite...");
+      winCard.style.display = "inline-block";
+  }else{
+      loseCard.style.display = "inline-block";
   }
+
+
 }
