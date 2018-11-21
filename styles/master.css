@@ -8,7 +8,6 @@
   color: white;
   text-shadow: 1px 1px 10px black;
   padding: 8px;
-/* color: rgb(153, 0, 0); */
 }
 
 .menu:hover {
@@ -96,13 +95,17 @@
   overflow: none;
 }
 
-#Content {
+.Content {
   font-size: 200%;
   grid-column: 2 / span 7;
   grid-row: 4 / span 4;
-  margin: 0% 20% 0% 20%;
+  margin: 0% 14% 0% 14%;
   overflow: scroll;
   font-family: 'Parisienne', cursive;
+}
+
+#Footer{
+  text-align: center;
 }
 
 .Background_left {
@@ -175,6 +178,36 @@
   color: rgb(153, 0, 0);
 }
 
+#BruceContent{
+  background-color: rgb(179, 102, 255);
+  /* background-color: rgb(191, 255, 128); */
+}
+
+#CaptainContent{
+  background-color: rgb(0, 134, 179);
+}
+
+#HawkContent{
+  background-color: rgb(102, 153, 153);
+}
+
+#HulkContent{
+  background-color: rgb(64, 128, 0);
+}
+
+#ManContent{
+  background-color: rgb(179, 0, 0);
+}
+
+#SpiderContent{
+  background-color: rgb(255, 51, 51);
+}
+
+#ThorContent{
+  background-color: rgb(255, 255, 153);
+}
+
+
 h1{
   text-align: center;
 }
@@ -206,4 +239,105 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* Game CSS */
+
+
+#GameScreen {
+  height: 590px;
+  width: 950px;
+  border: 5px solid black;
+  font-family: 'VT323', monospace;
+  background-image: url("https://i.imgur.com/fa0j0d1.jpg");
+}
+
+#WelcomeBox{
+  border: 5px solid black;
+  width: 400px;
+  padding: 20px;
+  font-size:20px;
+  display: inline-block;
+  text-align: center;
+  margin: 10% 30% 25% 30%;
+  background-color: white;
+}
+
+#options{
+   padding: 0% 10% 0% 10%;
+}
+
+#how2{
+  float: left;
+}
+
+#start{
+  float: right;
+}
+
+#how2:hover, #start:hover{
+  color: green;
+}
+
+#EndCard{
+ border: 5px solid black;
+  width: 400px;
+  padding: 20px;
+  font-size:20px;
+/*   display: inline-block; */
+  display: none;
+  text-align: center;
+  margin: 10% 30% 10% 30%;
+  background-color: white;
+}
+
+#PrizeFace{
+  background-image: url(https://media2.giphy.com/media/As8vsXFOOCsJW/giphy.gif?cid=3640f6095bf3e1cc625973524958ddfb );
+  height: 250px;
+  width: 400px;
+}
+
+#rod{
+  border: 8px solid black;
+  height: 500px;
+  width: 75px;
+  margin: 1% 0% 0% 10%;
+  border-radius: 10px;
+  background-color: skyblue;
+  display: none;
+  float: left;
+}
+
+#fishbar{
+  position: relative;
+  top: 0px;
+  border: 10px solid green;
+  height: 70px;
+  background-color: green;
+  margin: 0 auto;
+
+}
+#heart{
+  position: relative;
+  margin: -70px 1px 1px 13px;
+  top: 0px;
+}
+
+#progressBar{
+  margin: 1% 1% 1% 10%;
+  border: 5px solid black;
+  width: 800px;
+  border-radius: 10px;
+  display: none;
+  height: 30px;
+  background-color: pink;
+}
+
+#progress{
+  border: 5px solid red;
+  font-size: 20px;
+  border-radius: 4px;
+  width: 395px;
+  text-align: left;
+  background-color: red;
 }

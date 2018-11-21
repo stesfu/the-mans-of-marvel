@@ -2,26 +2,26 @@ let begin = document.querySelector("#WelcomeBox"),
     start = document.querySelector("#start"),
     how2 = document.querySelector("#how2"),
     prompt = document.querySelector("#GamePrompt"),
-    loseCard = document.querySelector("#LoseCard"),
-    winCard = document.querySelector("#WinCard"),
-    prize = document.querySelector("#WinFace"),
+    endCard = document.querySelector("#EndCard"),
+    prize = document.querySelector("#PrizeFace"),
+    endMessage =  document.querySelector("#EndMessage"),
     rodBar = document.querySelector("#rod"),
     fishbar = document.querySelector("#fishbar"),
-  heart = document.querySelector("#heart"),
-  progressBar = document.querySelector("#progressBar"),
-  progressMeter = document.querySelector("#progress"),
-  fishbarY = 0,
-  heartY = 0,
-  fishbarLength = 90,
-  heartLength = 70,
-  maxheartDown = -70,
-  maxheartUp = 71,
-  maxrodHeight = 410,
-  speed = 1,
-  acc = 2,
-  keypressAcc = 15,
-  progress = 395,
-  fullProgress = 790;
+    heart = document.querySelector("#heart"),
+    progressBar = document.querySelector("#progressBar"),
+    progressMeter = document.querySelector("#progress"),
+    fishbarY = 0,
+    heartY = 0,
+    fishbarLength = 90,
+    heartLength = 70,
+    maxheartDown = -70,
+    maxheartUp = 71,
+    maxrodHeight = 410,
+    speed = 1,
+    acc = 2,
+    keypressAcc = 15,
+    progress = 395,
+    fullProgress = 790;
 
   /*
  * This function is meant to always move the green bar down. If the bar ever
@@ -103,7 +103,6 @@ how2.addEventListener("click", function() {
   prompt.innerHTML = "Keep hitting the enter key to try and keep the heart within the green bar. Fill your progress bar to win the game!";
   how2.style.display = "none";
   start.style.float = "none";
-  // start.style.textAlign = "center";
 });
 
 document.addEventListener("keypress", function(event) {
@@ -122,9 +121,11 @@ function endGame() {
   rodBar.style.display = "none";
   progressBar.style.display = "none";
   if (progress >= fullProgress) {
-      winCard.style.display = "inline-block";
+        endCard.style.display = "inline-block";
+        endMessage.innerHTML = "Congratulations! You caught:";
+        prize.style.backgroundImage = "url(https://i.imgur.com/pwQbr2m.png)";
   }else{
-      loseCard.style.display = "inline-block";
+      endCard.style.display = "inline-block";
   }
 
 
